@@ -1,0 +1,9 @@
+{
+  "IS_EMAIL": "Please enter a valid email address",
+  "IS_NOT_EMPTY": "{property} cannot be empty",
+  "IS_STRING": "{property} must be text",
+  "MIN_LENGTH": "{property} must be at least {constraints.0} characters",
+  "IS_IN": "{property} is invalid",
+  "OTP_FORMAT": "otp must be a 6-digit code",
+  "WHITELIST": "{property} is not allowed"
+}

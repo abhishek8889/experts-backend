@@ -1,0 +1,9 @@
+{
+  "IS_EMAIL": "يرجى إدخال بريد إلكتروني صالح",
+  "IS_NOT_EMPTY": "{property} لا يمكن أن يكون فارغاً",
+  "IS_STRING": "{property} يجب أن يكون نصاً",
+  "MIN_LENGTH": "{property} يجب ألا يقل عن {constraints.0} أحرف",
+  "IS_IN": "{property} غير صالح",
+  "OTP_FORMAT": "يجب أن يكون رمز التحقق مكوناً من 6 أرقام",
+  "WHITELIST": "{property} غير مسموح به"
+}

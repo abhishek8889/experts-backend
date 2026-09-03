@@ -36,16 +36,19 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return a greeting from APP_NAME', () => {
-      expect(appController.getHello()).toBe('Hello from experts-backend');
+    it('should return a translated hello payload', () => {
+      expect(appController.getHello()).toEqual({
+        messageKey: 'common.HELLO',
+        messageArgs: { appName: 'experts-backend' },
+      });
     });
   });
 
   describe('health', () => {
     it('should report the database as connected', async () => {
       await expect(appController.checkHealth()).resolves.toEqual({
-        status: 'ok',
-        database: 'connected',
+        messageKey: 'common.DATABASE_CONNECTED',
+        data: { database: 'connected' },
       });
     });
   });

@@ -1,0 +1,7 @@
+{
+  "SUCCESS": "Request completed successfully",
+  "HELLO": "Hello from {appName}",
+  "DATABASE_CONNECTED": "Database is connected",
+  "INTERNAL_ERROR": "Something went wrong. Please try again",
+  "UNAUTHORIZED": "You are not authorized to access this resource"
+}

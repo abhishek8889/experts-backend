@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { TranslatedResult } from './common/types/translated-result';
 import { PrismaService } from './prisma/prisma.service';
 
 @Injectable()
@@ -9,16 +10,20 @@ export class AppService {
     private readonly prisma: PrismaService,
   ) {}
 
-  getHello(): string {
-    const appName = this.configService.getOrThrow<string>('APP_NAME');
-    return `Hello from ${appName}`;
+  getHello(): TranslatedResult {
+    return {
+      messageKey: 'common.HELLO',
+      messageArgs: {
+        appName: this.configService.getOrThrow<string>('APP_NAME'),
+      },
+    };
   }
 
-  async checkDatabase() {
+  async checkDatabase(): Promise<TranslatedResult<{ database: string }>> {
     await this.prisma.$queryRaw`SELECT 1`;
     return {
-      status: 'ok',
-      database: 'connected',
+      messageKey: 'common.DATABASE_CONNECTED',
+      data: { database: 'connected' },
     };
   }
 }
