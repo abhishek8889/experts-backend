@@ -22,6 +22,7 @@ import { LoginDto } from './dto/login.dto';
 import { RegisterDto } from './dto/register.dto';
 import { ResendVerificationDto } from './dto/resend-verification.dto';
 import { VerifyEmailDto } from './dto/verify-email.dto';
+import { SendLoginOtpDto } from './dto/send-login-otp';
 
 type AuthPayload = {
   user: PublicUser;
@@ -164,6 +165,9 @@ export class AuthService {
       data: { email },
     };
   }
+
+
+  // ############ Send Login OTP #############
 
   async login(dto: LoginDto): Promise<TranslatedResult<AuthPayload>> {
     const email = dto.email.toLowerCase().trim();

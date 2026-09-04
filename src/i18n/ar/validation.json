@@ -4,6 +4,11 @@
   "IS_STRING": "{property} يجب أن يكون نصاً",
   "MIN_LENGTH": "{property} يجب ألا يقل عن {constraints.0} أحرف",
   "IS_IN": "{property} غير صالح",
+  "IS_INT": "{property} يجب أن يكون عدداً صحيحاً",
+  "IS_BOOLEAN": "{property} يجب أن يكون true أو false",
+  "IS_DATE_STRING": "{property} يجب أن يكون تاريخاً صالحاً",
+  "MIN": "{property} يجب ألا يقل عن {constraints.0}",
+  "MAX": "{property} يجب ألا يزيد عن {constraints.0}",
   "OTP_FORMAT": "يجب أن يكون رمز التحقق مكوناً من 6 أرقام",
   "WHITELIST": "{property} غير مسموح به"
 }

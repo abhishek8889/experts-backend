@@ -14,6 +14,7 @@ import { envValidationSchema } from './config/env.validation';
 import { resolveI18nPath } from './config/i18n-path';
 import { MailModule } from './mail/mail.module';
 import { PrismaModule } from './prisma/prisma.module';
+import { ProfileModule } from './profile/profile.module';
 import { UsersModule } from './users/users.module';
 
 @Module({
@@ -46,6 +47,7 @@ import { UsersModule } from './users/users.module';
     MailModule,
     UsersModule,
     AuthModule,
+    ProfileModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -149,6 +149,11 @@ export class AllExceptionsFilter implements ExceptionFilter {
     'password',
     'role',
     'otp',
+    'gender',
+    'age',
+    'dob',
+    'years_of_experience',
+    'terms_and_conditions',
   ];
   private readonly constraintPriority = [
     'isNotEmpty',
@@ -159,6 +164,11 @@ export class AllExceptionsFilter implements ExceptionFilter {
     'isLength',
     'matches',
     'isIn',
+    'isInt',
+    'isBoolean',
+    'isDateString',
+    'min',
+    'max',
   ];
 
   private pickPriorityError(

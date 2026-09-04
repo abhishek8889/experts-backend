@@ -1,0 +1,6 @@
+{
+  "UPDATE_SUCCESS": "Profile updated successfully",
+  "PHONE_ALREADY_EXISTS": "An account with this phone number already exists",
+  "NO_FIELDS_TO_UPDATE": "Provide at least one field to update",
+  "EXPERT_FIELDS_NOT_ALLOWED": "Expert profile fields are only allowed for expert accounts"
+}

@@ -7,6 +7,7 @@ import { RegisterDto } from './dto/register.dto';
 import { ResendVerificationDto } from './dto/resend-verification.dto';
 import { VerifyEmailDto } from './dto/verify-email.dto';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
+import { SendLoginOtpDto } from './dto/send-login-otp';
 
 @Controller('auth')
 export class AuthController {
@@ -26,6 +27,12 @@ export class AuthController {
   resendVerification(@Body() dto: ResendVerificationDto) {
     return this.authService.resendVerification(dto);
   }
+
+
+  // @Post('send-login-otp')
+  // sendLoginOtp(@Body() dto: SendLoginOtpDto) {
+  //   return this.authService.sendLoginOtp(dto);
+  // }
 
   @Post('login')
   login(@Body() dto: LoginDto) {

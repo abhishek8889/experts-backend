@@ -1,5 +1,5 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { Prisma } from '@prisma/client';
+import { Gender, Prisma } from '@prisma/client';
 import { PrismaService } from '../prisma/prisma.service';
 
 type DbClient = Prisma.TransactionClient;
@@ -35,6 +35,8 @@ export type PublicUser = {
   firstName: string | null;
   lastName: string | null;
   phone: string | null;
+  gender: Gender | null;
+  age: number | null;
   email: string;
   isActive: boolean;
   verifiedAt: Date | null;
@@ -148,6 +150,8 @@ export class UsersService {
       firstName: user.firstName,
       lastName: user.lastName,
       phone: user.phone,
+      gender: user.gender,
+      age: user.age,
       email: user.email,
       isActive: user.isActive,
       verifiedAt: user.verifiedAt,

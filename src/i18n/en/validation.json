@@ -4,6 +4,11 @@
   "IS_STRING": "{property} must be text",
   "MIN_LENGTH": "{property} must be at least {constraints.0} characters",
   "IS_IN": "{property} is invalid",
+  "IS_INT": "{property} must be a whole number",
+  "IS_BOOLEAN": "{property} must be true or false",
+  "IS_DATE_STRING": "{property} must be a valid date",
+  "MIN": "{property} must be at least {constraints.0}",
+  "MAX": "{property} must be at most {constraints.0}",
   "OTP_FORMAT": "otp must be a 6-digit code",
   "WHITELIST": "{property} is not allowed"
 }
