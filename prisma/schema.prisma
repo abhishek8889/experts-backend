@@ -18,8 +18,6 @@ model User {
   firstName     String?
   lastName      String?
   phone         String?        @unique
-  gender        Gender?
-  age           Int?
   email         String         @unique
   verifiedAt    DateTime?
   passwordHash  String

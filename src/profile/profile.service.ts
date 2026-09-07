@@ -70,12 +70,6 @@ export class ProfileService {
   ): Promise<TranslatedResult<ProfilePayload>> {
     this.ensureHasUpdates(dto);
 
-
-    return {
-      messageKey: 'profile.UPDATE_SUCCESS',
-      data: currentUser,
-    };
-
     const phone = dto.phone?.trim();
     if (phone && phone !== currentUser.phone) {
       const existingPhone = await this.usersService.findByPhone(phone);
